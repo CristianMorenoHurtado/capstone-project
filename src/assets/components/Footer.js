@@ -1,61 +1,41 @@
-import { Center, Grid, GridItem, Image, Link, Text, VStack } from "@chakra-ui/react";
+import { Center, Grid, GridItem, Image, Text, VStack } from "@chakra-ui/react";
 import footerLogo from '../images/LittleLemonLogo.png'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <Center h='400px'>
-            <footer>
-                <Center>
-                    <Grid
-                        h='100%'
-                        templateRows={'repeat(1, 1fr)'}
-                        templateColumns={'repeat(8, 1fr)'}
-                        gap={24}
-                    >
-                        <GridItem colSpan={2}>
-                            <Link href='#'>
-                                <Center>
-                                    <Image h={'250px'} src={footerLogo} alt='Little Lemon Logo' />
-                                </Center>
-                            </Link>
-                        </GridItem>
-                        <GridItem colSpan={2}>
-                            <Text as='p' fontSize={'18px'} fontWeight={'bold'}>Doormat Navigation</Text>
-                            <ul>
-                                <VStack spacing={4} align={'left'} >
-                                    <li><Link fontWeight={'normal'} href='#'>Home</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>About</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Menu</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Reservations</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Order Online</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Login</Link></li>
-                                </VStack>
-                            </ul>
-                        </GridItem>
-                        <GridItem colSpan={2}>
-                            <Text as='p' fontSize={'18px'} fontWeight={'bold'}>Contact</Text>
-                            <ul>
-                                <VStack spacing={4} align={'left'} >
-                                    <li><Link fontWeight={'normal'} href='#'>Address</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Phone</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Email</Link></li>
-                                </VStack>
-                            </ul>
-                        </GridItem>
-                        <GridItem colSpan={2}>
-                            <Text as='p' fontSize={'18px'} fontWeight={'bold'}>Social Media</Text>
-                            <ul>
-                                <VStack spacing={4} align={'left'} >
-                                    <li><Link fontWeight={'normal'} href='#'>Address</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Phone</Link></li>
-                                    <li><Link fontWeight={'normal'} href='#'>Email</Link></li>
-                                </VStack>
-                            </ul>
-                        </GridItem>
-                    </Grid>
-                </Center>
-            </footer>
-        </Center>
+        <footer>
+            <Link to='/'>
+                <img className="footerLogo" src={footerLogo} alt='Little Lemon Logo' />
+            </Link>
+            <div>
+                <h3>Navigation</h3>
+                <ul>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><a href='#mainAbout'>About</a></li>
+                    <li><Link to='#'>Menu</Link></li>
+                    <li><Link to='/reserve'>Reservations</Link></li>
+                    <li><Link to='#'>Order Online</Link></li>
+                    <li><Link to='#'>Login</Link></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href='#'>Address</a></li>
+                    <li><a href='#'>phone</a></li>
+                    <li><a href='#'>Email</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href='#'>Address</a></li>
+                    <li><a href='#'>Phone</a></li>
+                    <li><a href='#'>Email</a></li>
+                </ul>
+            </div>
+        </footer>
     );
 }
 

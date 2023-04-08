@@ -31,5 +31,548 @@ a:hover {
 }
 
 img {
-  text-decoration: none;
+  width: 100%;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* NAVIGATION */
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navImgWrapper img {
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+}
+
+.navListItem {
+  padding: 0 16px;
+}
+
+.hamburgerMenu {
+  height: 16px;
+  visibility: hidden;
+  position: absolute;
+}
+
+.navList-mobile {
+  visibility: hidden;
+}
+
+/* MAIN */
+
+.mainReserve {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.mainImg {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.mainH1 {
+  color: #F4CE14;
+  margin-bottom: 8px;
+}
+
+.mainH3 {
+  margin: 8px 0;
+}
+
+.mainPara {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.mainBtn {
+  background-color: #F4CE14;
+  border: solid 1px black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.mainWrapper {
+  width: 50%;
+}
+
+.specialOrder {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.specialCard {
+  width: calc(100% / 3);
+  background-color: rgba(225, 225, 225, 0.5);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.specialCard:first-child {
+  margin-right: 16px;
+}
+
+.specialCard:last-child {
+  margin-left: 16px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border: solid 1px black;
+  object-fit: cover;
+}
+
+.specialTextWrapper {
+  padding: 8px;
+}
+
+.specialHeading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.specialPara {
+  padding-bottom: 8px;
+}
+
+.price {
+  color: #EE9972;
+}
+
+.specialCardWrapper {
+  display: flex;
+}
+
+.mainSpecials {
+  margin: 32px 0;
+}
+
+/* TESTIMONIALS */
+
+.mainTestimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+
+.testHeader {
+ padding-bottom: 16px;
+}
+
+.userWrapper {
+  display: inline-block;
+  margin: 16px;
+  padding: 16px;
+  background-color: rgba(225, 225, 225, 0.5);
+}
+
+.userImage {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.star {
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+  display: flex;
+}
+
+#mainAbout {
+  display: flex;
+  height: 400px;
+  align-items: center;
+}
+
+.aboutPara {
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.aboutHalf {
+  width: 100%;
+}
+
+.aboutHalfImg {
+  width: 100%;
+  position: relative;
+}
+
+.aboutImg1 {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  border: black solid 1px;
+}
+
+.aboutImg2 {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  position: absolute;
+  left: 25%;
+  top: -25%;
+  border: black solid 1px;
+}
+
+/* RESERVATION */
+#reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserveLogo {
+  height: 100px;
+  width: auto;
+  margin-bottom: 12px;
+}
+
+.customerNameWrapper {
+  display: flex;
+  justify-content: center;
+}
+.customerName:first-child {
+  margin-right: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.formEntries {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-right: 4px;
+}
+
+input, textarea {
+  border: none;
+  background-color: rgba(225, 225, 225);
+  height: 28px;
+  width: 100%;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  border-bottom: 2px solid #495E57;
+  background-color: rgba(225, 225, 225, 0.5)
+}
+
+input:not(:placeholder-shown):not(:focus):invalid {
+  border-bottom: 2px solid red;
+}
+
+
+.customerSpecial {
+  width: 100%;
+  height: 100px;
+}
+
+.submitBtn {
+  box-sizing: content-box;
+  background-color: #F4CE14;
+  border: solid 1px black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: auto;
+  margin-top: 16px
+}
+
+.reserveBtn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: auto;
+  margin-top: 16px;
+  border: none;
+  color: black;
+  background-color: #F4CE14;
+}
+
+.reserveModal {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  background-color: #4CAF50;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 10;
+  transition: visibility 1s, z-index 1s, box-shadow 1s, right .5s ease;
+  visibility: hidden;
+}
+
+.reserveModalHeader{
+  text-align: center;
+}
+
+body.reserve--modal--open {
+  overflow: hidden;
+}
+
+.reserve--modal--open .reserveModal{
+  z-index: 99;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  visibility: visible;
+  right: 0;
+}
+
+.reserve--modal--open .overlay {
+  position: fixed; /* Positioning and size */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128,128,128,0.5); /* color */
+  transition: z-index 1s, .5s ease;
+  z-index: 10;
+}
+
+.dateTime {
+  display: flex;
+  width: 100%;
+}
+
+.dateTimeWrapper {
+  width: calc(100% / 3);
+}
+
+.dateTimeWrapper:nth-child(2) {
+  padding: 0 8px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+  margin-left: 8px;
+  height: 250px;
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+
+.footerLogo {
+  height: 200px;
+}
+
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+
+  /* NAVIGATION */
+
+  nav {
+    justify-content: space-between;
+    margin: 0 12px;
+  }
+
+  .navList {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .hamburgerMenu {
+    visibility: visible;
+    position: relative;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .navList-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    width: 50%;
+    background-color: rgba(225, 225, 225);
+    position: absolute;
+    height: 100vh;
+    right: -100%;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: -1;
+    transition: visibility 1s, z-index 1s, box-shadow 1s, right .5s ease;
+    visibility: hidden;
+  }
+
+  .mobileNavList {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .modalX {
+    cursor: pointer;
+    color: red;
+  }
+
+  body.modal--open {
+    overflow: hidden;
+  }
+
+  .modal--open .navList-mobile{
+    z-index: 99;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    visibility: visible;
+    right: 0;
+  }
+
+  .modal--open .overlay {
+    position: fixed; /* Positioning and size */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5); /* color */
+    transition: z-index 1s, .5s ease;
+    z-index: 10;
+  }
+
+
+
+
+  .navListItem-mobile{
+    padding: 6px 20px;
+  }
+
+  /* MAIN */
+
+  .mainReserve {
+    flex-direction: column-reverse;
+    height: 100%;
+    margin: 0 12px;
+  }
+
+  .mainWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainPara {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainH3 {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .specialCardWrapper {
+    flex-direction: column;
+  }
+
+  .specialCard:last-child {
+    margin-left: 0;
+  }
+
+  .specialCard {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .userWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainTestimonials {
+    height: 100%;
+
+  }
+
+  #mainAbout {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .aboutHalfImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutImg1 {
+    margin: 8px 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .aboutImg2 {
+    position: unset;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  /* RESERVATION */
+
+  .reserveModalHeader {
+    font-size: 20px;
+  }
+
+  /* FOOTER */
+
+  footer {
+    font-size: small;
+  }
+}
+
+
+
