@@ -1,6 +1,5 @@
 import tableIcon from '../images/table.png'
 import { useState } from 'react';
-import ReactDOM from 'react-dom/client'
 import { Link } from 'react-router-dom';
 
 const Reserve = () => {
@@ -44,7 +43,7 @@ const Reserve = () => {
             <form onSubmit={handleSubmit}>
                 <div className='dateTime'>
                     <div className='dateTimeWrapper'>
-                        <label for="date">Date</label>
+                        <label htmlFor="date">Date</label>
                         <input
                             type="date"
                             id="date"
@@ -57,7 +56,7 @@ const Reserve = () => {
                         />
                     </div>
                     <div className='dateTimeWrapper'>
-                        <label for="time">Time</label>
+                        <label htmlFor="time">Time</label>
                         <input
                             type="time"
                             id="time"
@@ -71,7 +70,7 @@ const Reserve = () => {
                         />
                     </div>
                     <div className='dateTimeWrapper'>
-                        <label for="quantity">Guests</label>
+                        <label htmlFor="quantity">Guests</label>
                         <input
                             type="number"
                             id="guests"
@@ -87,7 +86,7 @@ const Reserve = () => {
                 </div>
                 <div className='customerNameWrapper'>
                     <div className='customerName'>
-                        <label for='firstName'>First Name</label>
+                        <label htmlFor='firstName'>First Name</label>
                         <input
                             type='text'
                             name='firstName'
@@ -98,7 +97,7 @@ const Reserve = () => {
                         />
                     </div>
                     <div className='customerName'>
-                        <label for='lastName'>Last Name</label>
+                        <label htmlFor='lastName'>Last Name</label>
                         <input
                             type='text'
                             name='lastName'
@@ -110,7 +109,7 @@ const Reserve = () => {
                     </div>
                 </div>
                 <div className='formEntries'>
-                    <label for='email'>Email Address</label>
+                    <label htmlFor='email'>Email Address</label>
                     <input
                         type='email'
                         name='email'
@@ -119,7 +118,7 @@ const Reserve = () => {
                         placeholder=' '
                         required
                     />
-                    <label for='phoneNumber'>Phone Number</label>
+                    <label htmlFor='phoneNumber'>Phone Number</label>
                     <input
                         type='tel'
                         name='phoneNumber'
@@ -129,7 +128,7 @@ const Reserve = () => {
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         required
                     />
-                    <label for='specialRequest'>Special Requests (if any)</label>
+                    <label htmlFor='specialRequest'>Special Requests (if any)</label>
                     <textarea
                         className='customerSpecial'
                         name='specialRequest'
