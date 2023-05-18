@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import starImage from '../images/star.svg'
+import { createRoot } from "react-dom/client";
 
 export default class AppUser extends React.Component {
   state = {
@@ -63,4 +64,5 @@ function App() {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const root = createRoot(rootElement);
+root.render(<App />, rootElement);

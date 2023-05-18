@@ -2,7 +2,7 @@ import './App.css';
 import Header from './assets/components/Header';
 import Main from './assets/components/Main';
 import Footer from './assets/components/Footer';
-import Reserve from './assets/components/Reserve';
+import BookingPage from './assets/components/BookingPage';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' exact element={ <Main /> } />
-          <Route path='/reserve' element={ <Reserve /> } />
+          <Route path='/reserve' element={ <BookingPage /> } />
         </Routes>
         <Footer />
       </BrowserRouter>
