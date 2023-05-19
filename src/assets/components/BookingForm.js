@@ -105,6 +105,7 @@ const BookingForm = () => {
                         name="guests"
                         min="1"
                         max="20"
+                        aria-label="On Click"
                         value={guests}
                         onChange={(e) => setGuests(e.target.value)}
                         placeholder=' '
