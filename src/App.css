@@ -40,6 +40,8 @@ img {
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 /* NAVIGATION */
@@ -73,6 +75,10 @@ nav {
 
 .navList-mobile {
   visibility: hidden;
+}
+
+.noPage {
+  cursor: not-allowed;
 }
 
 /* MAIN */
@@ -190,10 +196,12 @@ nav {
 .App {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .userWrapper {
-  width: 25%;
+  width: 21%;
   display: flex;
   flex-direction: column;
   background-color: rgba(225, 225, 225, 0.5);
@@ -274,7 +282,13 @@ nav {
 .customerNameWrapper {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
+
+.customerName{
+  width: 50%;
+}
+
 .customerName:first-child {
   margin-right: 8px;
 }
@@ -301,6 +315,7 @@ input, textarea, select {
   background-color: rgba(225, 225, 225);
   height: 28px;
   width: 100%;
+  padding: 0 4px;
 }
 
 textarea:focus, input:focus{
@@ -533,6 +548,11 @@ footer {
 
   .App {
     flex-direction: column;
+  }
+
+  .app {
+    height: auto;
+    justify-content: flex-start;
   }
 
   .userWrapper {

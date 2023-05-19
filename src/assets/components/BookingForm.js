@@ -8,10 +8,11 @@ const BookingForm = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
-    const [guests, setGuests] = useState('');
+    const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState('');
     const [users, setUsers] = useState([])
 
+    /*
     const fetchUserData = () => {
         fetch("https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js", {
             method: 'GET',
@@ -35,7 +36,7 @@ const BookingForm = () => {
         fetchUserData()
     }, [])
     console.log(users)
-
+    */
 
 
 
@@ -69,28 +70,31 @@ const BookingForm = () => {
                 <div className='dateTimeWrapper'>
                     <label htmlFor="date">Date</label>
                     <input
-                        type="date"
+                        type="text"
                         id="date"
                         name="date"
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
+                        onFocus={(e) => (e.target.type = "date")}
                         min="01-01-2023"
                         max="12-31-2023"
+                        placeholder='05/17/2023'
                         required
                     />
                 </div>
                 <div className='dateTimeWrapper'>
                     <label htmlFor="time">Time</label>
                     <input
-                        type="time"
+                        type="text"
                         id="time"
                         name="time"
                         min="09:00"
                         max="22:00"
                         value={time}
                         onChange={(e) => setTime(e.target.value)}
+                        onFocus={(e) => (e.target.type = "time")}
                         required
-                        placeholder=' '
+                        placeholder='12:00 PM'
                     />
                 </div>
                 <div className='dateTimeWrapper'>
@@ -114,9 +118,10 @@ const BookingForm = () => {
                     <input
                         type='text'
                         name='firstName'
+                        data-testid='firstName'
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
-                        placeholder=' '
+                        placeholder='John'
                         required
                     />
                 </div>
@@ -127,7 +132,7 @@ const BookingForm = () => {
                         name='lastName'
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
-                        placeholder=' '
+                        placeholder='Doe'
                         required
                     />
                 </div>
@@ -148,7 +153,7 @@ const BookingForm = () => {
                     name='email'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder=' '
+                    placeholder='jdoe@email.com'
                     required
                 />
                 <label htmlFor='phoneNumber'>Phone Number</label>
@@ -163,6 +168,7 @@ const BookingForm = () => {
                 />
                 <label htmlFor='specialRequest'>Special Requests (if any)</label>
                 <textarea
+                    aria-label="On Click"
                     className='customerSpecial'
                     name='specialRequest'
                 />
@@ -181,8 +187,8 @@ const BookingForm = () => {
                         <Link to='/'>Return Home</Link>
                 </button>
             </div>
-        <div className='overlay'></div>
-            </form>
+            <div className='overlay'></div>
+        </form>
     )
 }
 

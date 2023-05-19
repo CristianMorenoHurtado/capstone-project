@@ -25,7 +25,7 @@ const Main = () => {
             <div className='mainSpecials'>
                 <div className='specialOrder'>
                     <h2>Specials</h2>
-                    <button className='mainBtn'>Order Online</button>
+                    <button className='mainBtn noPage'>Order Online</button>
                 </div>
                 <div className='specialCardWrapper'>
                     <div className='specialCard'>

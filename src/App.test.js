@@ -26,3 +26,9 @@ test('initializeTimes', () => {
   const headingElement = screen.getByLabelText("time");
   expect(headingElement).toBeTruthy();
 })
+
+test('Testing First Name', () => {
+  render(<BookingForm />);
+  const headingElement = screen.getByTestId("firstName");
+  expect(headingElement).toBeTruthy();
+})

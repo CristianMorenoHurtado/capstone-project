@@ -12,27 +12,27 @@ const Footer = () => {
                 <h3>Navigation</h3>
                 <ul>
                     <li><Link to='/'>Home</Link></li>
-                    <li><a href='#mainAbout'>About</a></li>
-                    <li><Link to='#'>Menu</Link></li>
+                    <li><Link className='noPage'>About</Link></li>
+                    <li><Link className='noPage'>Menu</Link></li>
                     <li><Link to='/reserve'>Reservations</Link></li>
-                    <li><Link to='#'>Order Online</Link></li>
-                    <li><Link to='#'>Login</Link></li>
+                    <li><Link className='noPage'>Order Online</Link></li>
+                    <li><Link className='noPage'>Login</Link></li>
                 </ul>
             </div>
             <div>
                 <h3>Contact</h3>
                 <ul>
-                    <li><a href='#'>Address</a></li>
-                    <li><a href='#'>phone</a></li>
-                    <li><a href='#'>Email</a></li>
+                    <li><a className='noPage'>Address</a></li>
+                    <li><a className='noPage'>phone</a></li>
+                    <li><a className='noPage'>Email</a></li>
                 </ul>
             </div>
             <div>
                 <h3>Social Media</h3>
                 <ul>
-                    <li><a href='#'>Address</a></li>
-                    <li><a href='#'>Phone</a></li>
-                    <li><a href='#'>Email</a></li>
+                    <li><a className='noPage'>Address</a></li>
+                    <li><a className='noPage'>Phone</a></li>
+                    <li><a className='noPage'>Email</a></li>
                 </ul>
             </div>
         </footer>

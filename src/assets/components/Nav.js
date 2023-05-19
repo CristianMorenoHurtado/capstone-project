@@ -23,11 +23,11 @@ const Nav = () => {
                 </Link>
                 <ul className='navList'>
                     <li className='navListItem'><Link to="/">Home</Link></li>
-                    <li className='navListItem'><Link to='/'>About</Link></li>
-                    <li className='navListItem'><Link to='/'>Menu</Link></li>
+                    <li className='navListItem'><Link className='noPage'>About</Link></li>
+                    <li className='navListItem'><Link className='noPage'>Menu</Link></li>
                     <li className='navListItem'><Link to='/reserve'>Reservations</Link></li>
-                    <li className='navListItem'><Link to='/'>Order Online</Link></li>
-                    <li className='navListItem'><Link to='/'>Login</Link></li>
+                    <li className='navListItem'><Link className='noPage'>Order Online</Link></li>
+                    <li className='navListItem'><Link className='noPage'>Login</Link></li>
                 </ul>
                 <div className='overlay'>
                 </div>
@@ -36,11 +36,11 @@ const Nav = () => {
                     <FontAwesomeIcon className='modalX' onClick={toggleModal} icon="fa-solid fa-x" />
                     <div className='mobileNavList'>
                         <li className='navListItem-mobile' onClick={toggleModal}><Link to="/">Home</Link></li>
-                        <li className='navListItem-mobile' onClick={toggleModal}><Link to='/'>About</Link></li>
-                        <li className='navListItem-mobile' onClick={toggleModal}><Link to='/'>Menu</Link></li>
+                        <li className='navListItem-mobile' onClick={toggleModal}><Link className='noPage'>About</Link></li>
+                        <li className='navListItem-mobile' onClick={toggleModal}><Link className='noPage'>Menu</Link></li>
                         <li className='navListItem-mobile' onClick={toggleModal}><Link to='/reserve'>Reservations</Link></li>
-                        <li className='navListItem-mobile' onClick={toggleModal}><Link to='/'>Order Online</Link></li>
-                        <li className='navListItem-mobile' onClick={toggleModal}><Link to='/'>Login</Link></li>
+                        <li className='navListItem-mobile' onClick={toggleModal}><Link className='noPage'>Order Online</Link></li>
+                        <li className='navListItem-mobile' onClick={toggleModal}><Link className='noPage'>Login</Link></li>
                     </div>
                 </ul>
             </nav>
